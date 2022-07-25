@@ -1,0 +1,144 @@
+.presentacion {
+	width: 80%;
+	margin: 50px 10%;
+	display: flex;
+	align-items: center;
+}
+
+.presentacion__info {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 80%;
+	margin: auto 50px auto 0px;
+}
+
+.presentacion__titulo {
+	font-family: "Montserrat" , sans-serif;
+	font-weight: 700;
+	font-size: 3.5rem;
+	margin-bottom: 1.4rem;
+}
+
+.presentacion__texto {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2.5rem;
+	line-height: 2.5rem;
+	margin-top: .5rem;
+	margin-bottom: 5px;
+	
+}
+
+.presentacion__lista {
+	display: flex;
+	margin-top: 1.4rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.presentacion__items {
+	margin-right: 40px;
+	margin-left: 30px;
+	margin-top: 40px;
+	
+}
+
+.presentacion__links{
+    text-decoration: none;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 500;
+	font-size: 30px;
+    color: rgb(66, 66, 66);
+	transition: all 300ms;
+}
+
+.presentacion__links:hover{
+	font-weight: 700;
+	text-decoration:underline;
+    color: rgb(0, 0, 0);
+}
+
+.presentacion__foto {
+	width: 500px;
+	height: 500px;
+	border-radius: 100%;
+	margin: 20px;
+}
+
+.presentacion__items__boton{
+	width: 100%;
+}
+
+.presentacion__items__curriculo {
+	margin: 25px 0 0px 0;
+	display: block;
+	text-decoration: none;
+	color: rgb(33, 33, 33);
+	background-color: #ff681d;
+	padding: 12px 0px;
+	text-align: center;
+	border-radius: 15px;
+	font-family: "Montserrat" , sans-serif;
+	font-weight: 500;
+	transition: all 300ms;
+}
+
+.presentacion__items__curriculo:hover{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: whitesmoke;
+	background-color: black;
+}
+
+@media screen and (max-width:1024px) {
+
+	.presentacion {
+		margin: 20px 10% 50px 10%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.presentacion__foto {
+		width: 40%;
+		height: auto;
+		margin: 30px;
+		order: -1;
+		border: 15px dotted black;
+	}
+
+	.presentacion__info {
+		width: 100%;
+		margin: 0;
+		justify-content: center;
+	}
+
+	.presentacion__titulo {
+		text-align: center;
+	}
+
+	.presentacion__texto {
+		text-align: center;
+	}
+
+	.presentacion__lista {
+		justify-content: space-evenly;
+	}
+
+	.presentacion__items {
+		margin-top: 15px;
+	}
+}
+
+
+@media screen and (max-width:480px) {
+
+	.presentacion__foto {
+		width: 100%;
+		border: 15px double black;
+	}
+
+	.presentacion__titulo {
+		text-align: center;
+	}
+
+}

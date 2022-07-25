@@ -1,0 +1,270 @@
+#proyectos{
+    margin: 200px 0;
+}
+
+.proyectos__titulo{
+    font-family: "Montserrat" , sans-serif;
+	font-weight: 700;
+	font-size: 3.0rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.proyectos__item {
+	margin: 100px auto 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.proyectos__item:nth-child(1){
+	margin: 70px auto 0 auto;
+}
+
+.proyectos__item:nth-child(even) .proyectos__item__imagen{
+    order: 1;
+}
+
+.proyectos__item:nth-child(even) .proyectos__item__descripcion{
+    text-align: end;
+}
+
+.proyectos__item:nth-child(even) .proyectos__item__titulo{
+    text-align: end;
+}
+
+.proyectos__item__imagen{
+    height: 650px;
+	box-shadow: 0px 0px 10px #00000017;
+}
+
+.proyectos__item__info{
+    margin: 0 20px;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.proyectos__item__titulo{
+    font-family: "Montserrat" , sans-serif;
+	font-weight: 600;
+	font-size: 2.5rem;
+    margin: 0 5px 5px 5px;
+    text-align: start;
+}
+
+.proyectos__item__descripcion{
+    font-family: "Montserrat" , sans-serif;
+	font-weight: 400;
+	font-size: 1.9rem;
+    margin: 40px;
+}
+
+.proyectos__botones{
+    margin: 5px;
+}
+
+.proyectos__item__boton {
+	text-decoration: none;
+	padding: 19px 82px;
+}
+
+.boton-repositorio{
+    background-color: rgb(36, 36, 36);
+    border: 2px solid #000000;
+    font-family: "Montserrat" , sans-serif;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-weight: 400;
+    transition: all 300ms;
+}
+
+.boton-repositorio:hover{
+    background-color: rgb(0, 0, 0);
+
+}
+
+.boton-demo{
+    border: 2px solid #1dceff;
+    font-family: "Montserrat" , sans-serif;
+    border-radius: 15px;
+    color: black;
+    font-weight: 400;
+    transition: all 300ms;
+    font-size: 1.8rem;
+}
+
+.boton-demo:hover{
+    background-color: #1dceff;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .proyectos__lista {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__imagen {
+        order: 0;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__titulo {
+        text-align: center;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__descripcion {
+        text-align: center;
+    }
+
+    .proyectos__item {
+        width: 60%;
+        background-color: #1e1e1e;
+        padding: 19px;
+        margin: 50px auto 0 auto;
+        border-radius: 15px;
+    }
+
+    .proyectos__item__info {
+        height: auto;
+        width: 100%;
+    }
+
+    .proyectos__item__imagen {
+        height: auto;
+        width: 100%;
+    }
+
+    .proyectos__item__titulo {
+        text-align: center;
+        margin-top: 20px;
+        color: whitesmoke;
+    }
+
+    .proyectos__item__descripcion {
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .proyectos__botones {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proyectos__item__boton {
+        text-decoration: none;
+        padding: 21px 70px;
+    }
+
+    .boton-demo {
+        background-color: #1dceff;
+        margin: 0px 5px;
+        border: none;
+        font-weight: 500;
+        width: 45%;
+        text-align: center;
+    }
+
+    .boton-repositorio {
+        margin: 0px 5px;
+
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: none;
+        font-weight: 500;
+        width: 45%;
+        text-align: center;
+        
+    }
+
+    .boton-repositorio:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .proyectos__item:nth-child(1) {
+        margin: 40px auto 0 auto;
+    }
+
+    .proyectos__item__imagen {
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    .proyectos__item {
+        margin: 40px auto 0 auto;
+        width: 80%;
+        background-color: white;
+        padding-top: 15px;
+        border-radius: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .proyectos__item__info {
+        height: 150px;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__imagen {
+        order: 0;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__titulo {
+        text-align: center;
+    }
+
+    .proyectos__item:nth-child(2n) .proyectos__item__descripcion {
+        text-align: center;
+    }
+
+    .proyectos__item__titulo {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 15px;
+        color: black;
+    }
+
+    .proyectos__item__descripcion {
+        text-align: center;
+        color: black;
+    }
+
+    .proyectos__botones {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .boton-demo {
+        border-radius: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: #ff5500;
+        margin-top: 5px;
+    }
+
+    .boton-repositorio {
+        border-radius: 10px;
+        margin: 0px 5px;
+        background-color: rgb(26, 26, 26);
+        color: whitesmoke;
+        border: none;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+    }
+
+    .boton-repositorio:hover {
+        background-color: black;
+    }
+}

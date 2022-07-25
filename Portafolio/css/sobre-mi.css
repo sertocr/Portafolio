@@ -1,0 +1,51 @@
+#sobreMi{
+    background-color: black;
+    padding: 150px 0;
+}
+
+.sobreMi__info{
+    width: 80%;
+    margin: 0px auto;
+	padding-bottom: 50px;
+}
+
+.sobreMi__titulo {
+    text-transform: uppercase;
+	font-family: "Montserrat" , sans-serif;
+	font-weight: 700;
+	font-size: 3.0rem;
+	color: white;
+	margin-bottom: 30px;
+}
+
+.sobreMi__texto {
+	font-family: "Montserrat" , sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	color: white;
+	line-height: 1.9rem;
+}
+
+.sobreMi__imagen{
+	width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+
+	.sobreMi__texto{ 
+	font-family: "Montserrat" , sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	color: white;
+	line-height: 2.5em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+	.sobreMi__titulo {
+		text-align: center;
+	}
+
+	
+}

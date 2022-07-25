@@ -1,0 +1,40 @@
+body{
+    background-color: #F5F5F5;
+}
+
+.contenedorbanner{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+}
+
+@media screen and (max-width:480px) {
+
+    .contenedorbanner{
+        overflow: hidden;
+    }
+
+    .banner {
+        height: 250px;
+        width: initial;
+        animation-duration: 20s;
+        animation-name: desplazarbanner;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        position: relative;
+    }
+
+    @keyframes desplazarbanner{
+        from{
+            left: 0px;
+        }
+
+        to{
+            left: -690px;
+        }
+    }
+    
+}
